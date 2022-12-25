@@ -1,7 +1,7 @@
 /*
 Theme Name: Hirokazu Naiki
 Theme URI: https://hirokazunaiki.com/
-Description: HirokazuNaiki Original Theme. Create 2022.9.17. Last Update 2022.12.20
+Description: HirokazuNaiki Original Theme. Create 2022.9.17. Last Update 2022.12.25
 Version: 1.0
 Author: Hirokazu Naiki
 Author URI: https://hirokazunaiki.com/
@@ -2562,6 +2562,11 @@ th {
 	margin: 0;
 	padding: 0;
 }
+@media ( min-width: 500px ) {
+	.hero-news__date {
+		font-size: 1.2em;
+	}
+}
 
 .hero-news__ttl {
 	font-weight: 500;
@@ -3408,7 +3413,7 @@ th {
 }
 
 .fp-service-col__ttl {
-	font-size: 2rem;
+	font-size: 1.3em;
 }
 
 .fp-service-col__body {
