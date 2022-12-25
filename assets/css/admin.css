@@ -1,0 +1,48 @@
+
+/* ========================================================================== */
+
+/*	CSS
+/* ========================================================================== */
+
+.form-table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.form-table th {
+    width: 1em;
+    text-align: left;
+    vertical-align: top;
+    line-height: 2;
+    white-space: nowrap;
+}
+
+.form-wrapper {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dotted #aaa;
+    border-radius: 5px;
+}
+
+.form-wrapper legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.select_img {
+    display: inline-block;
+}
+
+.select_img img {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.remove_img {
+    color: #b32d2e;
+}
+
+.remove_img:hover {
+    color: #b32d2e;
+}
