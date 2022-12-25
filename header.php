@@ -27,8 +27,8 @@
                     $custom_logo_url = wp_get_attachment_image_src($custom_logo_id, 'large'); 
                     $custom_logo_url = $custom_logo_url[0];
                     ?> 
-                    <div class="modal-ttl__logo-wrapper">
-                        <img class="modal-ttl__logo" src="<?php echo $custom_logo_url; ?>" alt="<?php bloginfo('title'); ?>">
+                    <div class="site-header-ttl__logo-wrapper">
+                        <img class="site-header-ttl__logo" src="<?php echo $custom_logo_url; ?>" alt="<?php bloginfo('title'); ?>">
                     </div><?php
                     } else {
                     ?> 
@@ -59,9 +59,9 @@
 
                     // ヘッダータイトル
                     if ( has_custom_logo() ) { 
-                    $custom_logo_id = get_theme_mod('custom_logo'); 
+                    $custom_logo_id = get_theme_mod('custom_logo');
                     $custom_logo_url = wp_get_attachment_image_src($custom_logo_id, 'large'); 
-                    $$custom_logo_url = $custom_logo_url[0];
+                    $custom_logo_url = $custom_logo_url[0];
                     ?> 
                     <div class="site-header-ttl__logo-wrapper">
                         <img class="site-header-ttl__logo" src="<?php echo $custom_logo_url; ?>" alt="<?php bloginfo('title'); ?>">

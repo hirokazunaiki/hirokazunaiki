@@ -9,8 +9,8 @@
                             $custom_logo_url = wp_get_attachment_image_src($custom_logo_id, 'large'); 
                             $logo_url = $custom_logo_url[0];
                             ?> 
-                            <div class="footer-ttl__logo-wrapper">
-                                <img class="footer-ttl__img" src="<?php echo $logo_url; ?>">
+                            <div class="site-header-ttl__logo-wrapper">
+                                <img class="site-header-ttl__logo" src="<?php echo $logo_url; ?>">
                             </div><?php
                             } else {
                             ?> 
