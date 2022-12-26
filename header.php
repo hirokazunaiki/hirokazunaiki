@@ -170,7 +170,7 @@
                     <div class="hero-news__item swiper-slide">
                         <a href="<?php the_permalink(); ?>" class="hero-news__link">
                             <time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="hero-news__date"><?php echo get_the_date(); ?></time>
-                            <div class="hero-news__ttl"><?php the_title(); ?></div>
+                            <h3 class="hero-news__ttl"><?php the_title(); ?></h3>
                         </a>
                     </div><?php
                     }
