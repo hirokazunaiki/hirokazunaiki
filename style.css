@@ -1,8 +1,8 @@
 /*
 Theme Name: NDO
 Theme URI: https://hirokazunaiki.com/
-Description: HirokazuNaiki Original Theme. Create 2022.9.17. Last Update 2023.2.8
-Version: 1.1.1
+Description: HirokazuNaiki Original Theme. Create 2022.9.17. Last Update 2023.4.21
+Version: 1.2.0
 Author: Hirokazu Naiki
 Author URI: https://hirokazunaiki.com/
 Text Domain: portfolio
@@ -4506,6 +4506,11 @@ th {
 	font-weight: 600;
 	text-transform: capitalize;
 	margin: 0 0 1em;
+}
+
+.single-cont__date {
+	margin-top: 0;
+	color: var(--gray-80);
 }
 
 .single-cont__body {

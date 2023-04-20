@@ -39,13 +39,25 @@
                 </a>
             </div>
         </div>
-        <div class="modal__body">
+        <div class="modal__body"><?php
+
+            // モーダルメニュー
+            if(has_nav_menu('modal-menu')){
+            ?> 
             <div class="modal-nav"> 
                 <?php echo str_replace(array("\r\n", "\r", "\n", "\t"), '', wp_nav_menu(array('theme_location' => 'modal-menu','echo' => false, 'container' => false, 'items_wrap' => '<ul class="modal-nav__menu">%3$s</ul>','add_li_class' => 'modal-nav__item','add_a_class' => 'modal-nav__link'))); ?> 
-            </div>
+            </div><?php
+            }
+
+            // SNSメニュー
+            if(has_nav_menu('sns-menu')){
+            ?> 
             <div class="modal-sns-list">
                 <?php echo str_replace(array("\r\n", "\r", "\n", "\t"), '', wp_nav_menu(array('theme_location' => 'sns-menu', 'echo' => false, 'container' => false, 'items_wrap' => '<ul class="modal-sns-list__menu">%3$s</ul>', 'add_li_class' => 'modal-sns-list__item', 'add_a_class' => 'modal-sns-list__link'))); ?> 
-            </div>
+            </div><?php
+            }
+
+            ?> 
         </div>
     </div>
 </nav>
@@ -76,10 +88,17 @@
                 <div class="site-header-ttl__desc"><?php bloginfo('description'); ?></div>
             </div>
         </div>
-        <nav class="site-header__nav-wrapper">
+        <nav class="site-header__nav-wrapper"><?php
+
+            // 水平メニュー
+            if(has_nav_menu('horizontal-menu')){
+            ?> 
             <div class="horizontal-nav">
                 <?php echo str_replace(array("\r\n", "\r", "\n", "\t"), '', wp_nav_menu(array('theme_location' => 'horizontal-menu', 'echo' => false, 'container' => false, 'items_wrap' => '<ul class="horizontal-nav__menu">%3$s</ul>','add_li_class' => 'horizontal-nav__item','add_a_class' => 'horizontal-nav__link'))); ?> 
-            </div>
+            </div><?php
+            }
+
+            ?> 
         </nav>
     </header><?php
 

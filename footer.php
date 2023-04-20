@@ -20,13 +20,25 @@
                         </a>
                     </div>
                 </div>
-                <div class="sitemap__body">
+                <div class="sitemap__body"><?php
+
+                    // フッターメニュー
+                    if(has_nav_menu('footer-menu')){
+                    ?> 
                     <div class="sitemap-list">
                         <?php echo str_replace(array("\r\n", "\r", "\n", "\t"),'',wp_nav_menu (array('theme_location' => 'footer-menu', 'echo' => false, 'container' => false, 'items_wrap' => '<ul class="sitemap-list__menu">%3$s</ul>', 'add_li_class' => 'sitemap-list__item', 'add_a_class' => 'sitemap-list__link'))); ?> 
-                    </div>
+                    </div><?php
+                    }
+
+                    // SNSメニュー
+                    if(has_nav_menu('sns-menu')){
+                    ?> 
                     <div class="sitemap-sns-list">
                         <?php echo str_replace(array("\r\n", "\r", "\n", "\t"),'',wp_nav_menu (array('theme_location' => 'sns-menu', 'echo' => false, 'container' => false, 'items_wrap' => '<ul class="sitemap-sns-list__menu">%3$s</ul>', 'add_li_class' => 'sitemap-sns-list__item', 'add_a_class' => 'sitemap-sns-list__link'))); ?> 
-                    </div>
+                    </div><?php
+                    }
+
+                    ?> 
                 </div>
             </div>
         </div>
